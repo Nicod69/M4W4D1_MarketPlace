@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dettagli del prodotto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/loader.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">  </div><div class="col-6"> <h1>Dettagli prodotto</h1> </div><div class="col-2">  </div>
+
+
+            <div class="col-12 pt-2">
+               
+                    <!-- Al fine di creare un nuovo oggetto nel database lato server, procedo a realizzare un Form contenente un campo per ogni proprietà dell'oggetto che dovrò inviare -->
+                    
+                    <div class="col-12 mt-2">
+                        <label for="productName" class="form-label bg-info rounded p-1">Nome prodotto:</label>
+                        <input type="text" id="productName" readonly class="form-control" placeholder="Nome prodotto">
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <label for="productDescription" class="form-label bg-info rounded p-1">Descrizione:</label>
+                        <input type="text" id="productDescription" readonly class="form-control" placeholder="Descrizione prodotto">
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <label for="productBrand" class="form-label bg-info rounded p-1">Marca prodotto:</label>
+                        <input type="text" id="productBrand" readonly class="form-control" placeholder="Marca del prodotto">
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <label for="productImgUrl" class="form-label bg-info rounded p-1">Link dell'immagine del prodotto:</label>
+                        <input type="text" id="productImgUrl" readonly class="form-control" placeholder="Link dell'immagine del prodotto">
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <label for="productPrice" class="form-label bg-info rounded p-1">Prezzo del prodotto:</label>
+                        <input type="number" id="productPrice" readonly class="form-control" placeholder="Prezzo">
+                    </div>    
+
+                  
+                    
+
+                    <div class="col-5 mt-2 justify-content-end">
+
+                        <button class="btn btn-success" id="btnHome">Torna all'elenco prodotti</button>
+                    </div>
+
+               
+
+               
+            </div>
+        </div>
+    </div>
+     
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
+    
+    <script type="module" src="./js/detail_product.js"></script>
+
+
+</body>
+</html>
